@@ -1,19 +1,22 @@
-html{
+*{
     padding: 0;
+    margin: 0;
 
 }
 body {
     background-color: black;
+    
 }
 
-.Text1{
+main{
     color: whitesmoke;
     padding: 10vh;
+  
 }
 .NavBar{
     text-align: center;
     font-size: 2rem;
-    padding: 10%;
+   
    
 }
 
@@ -25,6 +28,29 @@ a{
 
 }
 
-img{
-    width: 5%;
+.Profile{
+    width: 15%;
+    
+}
+.Skills{
+  
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-53%);
+    width: 20%;
+
+}
+
+li{
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 60px;
+    border: 1px solid white;
+    border-radius: 40%;
+    background-color: #44c8a6;
+}
+.Coordonnes{
+color: white;
 }

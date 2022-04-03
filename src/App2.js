@@ -11,8 +11,9 @@ class App2 extends Component{
     return( 
  
      <div className="NavBar">
+       
         <Link to="/home">Home</Link>
-        <Link to="/propos">Propos </Link>
+        <Link to="/propos">A propos </Link>
         <Link to="/contact">Contact </Link>
       
 
@@ -23,7 +24,7 @@ class App2 extends Component{
       
 
        </Routes>
-      
+   
      </div>
    
     );
