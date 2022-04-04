@@ -10,7 +10,7 @@ function Propos() {
     <h1>
         Qui suis-je ?
     </h1>
-    <p>Après plus d'une dizaine dans la grande distibution à divers postes, je me suis orienté 
+    <p>Après plus d'une dizaine dans la grande distibution à divers postes,<br></br> je me suis orienté 
         vers une reconversion professionnelle en tant que développeur web.
     </p>
     <section className="Skills">
@@ -18,10 +18,10 @@ function Propos() {
         <ul>
             <li><FaBootstrap/></li>
             <li><FaCss3Alt/></li>
-            <li><FaHtml5/></li>
+            <li><FaHtml5/></li><br></br>
             <li><FaJsSquare/></li>
             <li><FaNodeJs/></li>
-            <li><FaReact/></li>
+            <li><FaReact/></li><br></br>
             <li><FaSymfony/></li>
             <li><FaWordpress/></li>
             <li><FaPhp/></li>

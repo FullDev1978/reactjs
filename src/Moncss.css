@@ -8,9 +8,11 @@ body {
     
 }
 
+
 main{
     color: whitesmoke;
     padding: 10vh;
+    font-size: 60%;
   
 }
 .NavBar{
@@ -33,12 +35,10 @@ a{
     
 }
 .Skills{
+    padding-top: 5%;
   
-    position: absolute;
-    left: 50%;
-    bottom: 20%;
-    transform: translate(-53%);
-    width: 20%;
+
+    
 
 }
 
@@ -53,4 +53,5 @@ li{
 }
 .Coordonnes{
 color: white;
+font-size: 60%;
 }
