@@ -32,3 +32,4 @@ class App2 extends Component{
 }
 
 export default App2;
+

@@ -1,40 +1,58 @@
-import React from 'react';
-import ServerSideTable from 'reactjs-server-side-table';
+import React, {Component} from 'react';
+import axios from 'axios';  
 
 
-const url = 'https://jsonplaceholder.typicode.com/users';
-const headers = [
-  [
-    {title: "아이디"},
-    {title: "이름"},
-    {title: "연락처"},
-    {title: "이메일"},
-    {title: "등록일"}
-  ]
-];
-const columns = [
-  {name: 'address'}, 
-  {name: 'name'}, 
-  {name: 'username'}, 
-  {name: 'email'}, 
-  {name: 'phone'}
-];
+class Employee extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            persons: []
+        }
+    }
+    componentDidMount(){
+        axios.get('https://jsonplaceholder.typicode.com/users')
+        .then(res =>{
+            const persons = res.data;
+            this.setState({persons});
+        })
+        console.log(this.state.persons);
+    }
+render(){
+    
+    return (
+        <>
+        <table>
+<thead><th colSpan="5">Coordonnées</th></thead>
+    <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Addresse</th>
+        <th>Téléphone</th>
+    </tr>
+    { this.state.persons.map(person =>
+<tr>
+    <td>{person.name}</td>
+    <td>{person.username}</td>
+    <td>{person.email}</td>
+    <td>{person.address.street} - {person.address.suite} . {person.address.city} - {person.address.zipcod}</td>
+    <td>{person.name}</td>
 
-<ServerSideTable
-  url={https://jsonplaceholder.typicode.com/users} 
-  headers={headers} 
-  columns={columns} 
-/>
+</tr>
 
+       
+        )}
 
+        </table>
+  
+   </>
+    );
+    }
 
-
-
-
-
-
-
-
+}
 
 
 export default Employee;
+
+
+
